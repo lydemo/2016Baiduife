@@ -169,6 +169,12 @@ fieldset[disabled] .btn-info.focus {
 	font-size: 20px;
 
 }
+.displaycontent a{
+    color: #fff;
+    font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
 .displayimg {
     width: 100%;
 	border-radius: 4px;
