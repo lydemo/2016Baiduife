@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<title>Demo 3</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>轮播图</h3>
+		<div class="imgRotation">
+                
+                <div class="img-list">
+                    <img src="/ife/task0002/image/1.jpg" alt="">
+                    <img src="/ife/task0002/image/2.jpg" alt="">
+                    <img src="/ife/task0002/image/3.jpg" alt="">
+                    <img src="/ife/task0002/image/1.jpg" alt="">
+                    <img src="/ife/task0002/image/2.jpg" alt="">
+                </div>
+                <div class="circle">
+                    <a href="javascript:;" class="active"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+    
+  </div>
+  <script src="js/util.js"></script>
+  <script src="js/task0002_3.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- 引入对应版本的MuPlayer，要置于jQuery之后。-->
+<script src="js/player.js"></script>
+
+<script>
+    // 初始化一个MuPlayer的实例。注意，我们默认使用了_mu全局命名空间。
+    var player = new _mu.Player({
+        // baseDir是必填初始化参数，指向刚才签出的MuPlayer静态资源目录
+        baseDir: 'http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/'
+    });
+
+    // 通过add方法添加需要播放的音频，并调用play方法开始播放。
+    player.add('mp3/Keira Knightley - Tell Me If You Wanna Go Home.mp3').play();
+	
+</script>
+ </body>
+</html>
