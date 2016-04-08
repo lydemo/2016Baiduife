@@ -175,6 +175,9 @@ fieldset[disabled] .btn-info.focus {
     font-size: 20px;
     text-decoration: none;
 }
+.displaycontent li{
+    list-style: none;
+}
 .displayimg {
     width: 100%;
 	border-radius: 4px;
